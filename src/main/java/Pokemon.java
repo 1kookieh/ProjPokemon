@@ -16,6 +16,10 @@ public class Pokemon {
         this.habilidades = new ArrayList<>();
     }
 
+    public List<Habilidade> getHabilidades() {
+        return habilidades;
+    }
+
     public void atacar(Pokemon inimigo, Habilidade habilidade) {
         System.out.println(nome + " usou " + habilidade.getNome() + " em " + inimigo.getNome());
         inimigo.receberDano(habilidade.getPoder());
